@@ -10,4 +10,6 @@ samples viewer:
 
 ![image](https://user-images.githubusercontent.com/538812/170970436-d9bb3171-dc7c-46bb-b7cf-747a390de12a.png)
 
-sample tile: https://bertt.github.io/terrain_tiles/spain/tiles/0/0/0.png
+- Amerongen https://bertt.github.io/terrain_tiles/amerongen
+
+![image](https://user-images.githubusercontent.com/538812/171030227-b47aa586-b58e-414e-a908-d13551ccabd3.png)
