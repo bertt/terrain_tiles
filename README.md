@@ -1,8 +1,13 @@
 # terrain_tiles
 
-sample viewer: https://bertt.github.io/terrain_tiles/spain/rio/
+samples viewer: 
+
+- Andorra: https://bertt.github.io/terrain_tiles/spain/
 
 <img width="891" alt="Screenshot 2022-05-24 at 15 57 19" src="https://user-images.githubusercontent.com/538812/170053449-4ab363bd-1ae9-4e97-af9b-34c512c0a75c.png">
 
+- Mount Kinabalu: https://bertt.github.io/terrain_tiles/kinabalu/
 
-sample tile: https://bertt.github.io/terrain_tiles/spain/rio/tiles/0/0/0.png
+![image](https://user-images.githubusercontent.com/538812/170970436-d9bb3171-dc7c-46bb-b7cf-747a390de12a.png)
+
+sample tile: https://bertt.github.io/terrain_tiles/spain/tiles/0/0/0.png
