@@ -62,7 +62,7 @@
           ],
           terrain: {
             source: "terrainSource",
-            exaggeration: 1,
+            exaggeration: 10,
           },
         },
         center: [5.475225,52.018434], 
@@ -84,7 +84,8 @@
 
       map.addControl(
         new maplibregl.TerrainControl({
-          source: "terrainSource"
+          source: "terrainSource",
+          exaggeration: 10
         })
       );
   
