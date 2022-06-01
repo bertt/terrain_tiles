@@ -12,4 +12,5 @@ samples viewer:
 
 - Amerongen https://bertt.github.io/terrain_tiles/amerongen
 
-![image](https://user-images.githubusercontent.com/538812/171030227-b47aa586-b58e-414e-a908-d13551ccabd3.png)
+![image](https://user-images.githubusercontent.com/538812/171462551-83f70926-7c1a-4014-bebc-021d9987a5df.png)
+
