@@ -25,54 +25,27 @@
   <script>
       const map = new maplibregl.Map({
         container: 'map', // container id
-        style: {
-          version: 8,
-          sources: {
-            osm: {
-              type: "raster",
-              tiles: ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
-              tileSize: 256,
-              attribution: "&copy; OpenStreetMap Contributors",
-              maxzoom: 19,
-            },
-            terrainSource: {
-              type: "raster-dem",
-              url: "tiles.json",
-              tileSize: 256
-            },
-            hillshadeSource: {
-              type: "raster-dem",
-              url: "tiles.json",
-              tileSize: 256
-            },
-          },
-          layers: [
-            {
-              id: "osm",
-              type: "raster",
-              source: "osm",
-            },
-            {
-              id: "hills",
-              type: "hillshade",
-              source: "hillshadeSource",
-              layout: { visibility: "visible" },
-              paint: { "hillshade-shadow-color": "#473B24" },
-            },
-          ],
-          terrain: {
-            source: "terrainSource",
-            exaggeration: 10,
-          },
-        },
+        style: 'https://fileserv.beta.geodan.nl/mapbox/styles/basiskaart_style-dev.json',
         center: [5.475225,52.018434], 
         zoom: 12,
         pitch: 61,
         bearing: 0,
         maxPitch: 85,
-        maxZoom: 14
+        maxZoom: 14,
       });
 
+      map.on('load', function(){
+        map.addSource('terrainSource',{type: "raster-dem",url: "tiles.json",tileSize: 256});
+        map.setTerrain({
+          source: "terrainSource",
+          exaggeration: 10,
+        });
+        map.addLayer({id: "hills",type: "hillshade",
+                  source: "terrainSource",
+                  layout: { visibility: "visible" },
+                  paint: { "hillshade-shadow-color": "#473B24" },
+        });
+    });
 
      map.addControl(
         new maplibregl.NavigationControl({
