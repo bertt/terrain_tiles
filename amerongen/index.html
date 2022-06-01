@@ -35,16 +35,25 @@
       });
 
       map.on('load', function(){
-        map.addSource('terrainSource',{type: "raster-dem",url: "tiles.json",tileSize: 256});
+        map.addSource('terrainSource',{
+            type: "raster-dem",
+            url: "tiles.json",
+            tileSize: 256
+          }
+        );
         map.setTerrain({
-          source: "terrainSource",
-          exaggeration: 10,
-        });
-        map.addLayer({id: "hills",type: "hillshade",
-                  source: "terrainSource",
-                  layout: { visibility: "visible" },
-                  paint: { "hillshade-shadow-color": "#473B24" },
-        });
+            source: "terrainSource",
+            exaggeration: 10,
+          }
+        );
+        map.addLayer({
+            id: "hills",
+            type: "hillshade",
+            source: "terrainSource",
+            layout: { visibility: "visible" },
+            paint: { "hillshade-shadow-color": "#473B24" },
+          }
+        );
     });
 
      map.addControl(
