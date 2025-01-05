@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Display a 3D Map</title>
-  <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.0.0/dist/maplibre-gl.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.0.0/dist/maplibre-gl.min.js" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
+  <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
   <style>
     body { 
       margin: 0; 
@@ -42,7 +42,7 @@
             },
             hillshadeSource: {
               type: "raster-dem",
-              url: "tiles.json",
+              tiles: ["./tiles/{z}/{x}/{y}.png"],
               tileSize: 256,
             },
           },
