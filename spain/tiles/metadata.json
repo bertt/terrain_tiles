@@ -1,7 +1,7 @@
 {
-    "format": "png",
-    "name": "",
-    "description": "",
-    "version": "1",
-    "type": "baselayer"
+    "description": "", 
+    "version": "1", 
+    "type": "baselayer", 
+    "name": "", 
+    "format": "png"
 }
